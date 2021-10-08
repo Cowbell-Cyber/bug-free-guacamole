@@ -1,29 +1,3 @@
-((app) => {
-  const notifications = initialNotifications;
-
-  /* api calls */
-  async function getNotifications() {
-    await sleep(randomNumber(2));
-    return {
-      data: notifications,
-      meta: { total: notifications.length },
-    };
-  }
-
-  async function addNotification(payload) {
-    notifications.push({ ...payload, id: notifications.length + 1 });
-
-    await sleep(randomNumber(2));
-    return { data: payload };
-  }
-
-  // exports
-  app.getNotifications = getNotifications;
-  app.addNotification = addNotification;
-
-  window.app = app;
-})(window.app || {});
-
 const initialNotifications = [
   {
     id: 4,
@@ -50,3 +24,29 @@ const initialNotifications = [
     read: false,
   },
 ];
+
+((app) => {
+  const notifications = initialNotifications;
+
+  /* api calls */
+  async function getNotifications() {
+    await sleep(randomNumber(2));
+    return {
+      data: notifications,
+      meta: { total: notifications.length },
+    };
+  }
+
+  async function addNotification(payload) {
+    notifications.push({ ...payload, id: notifications.length + 1 });
+
+    await sleep(randomNumber(2));
+    return { data: payload };
+  }
+
+  // exports
+  app.getNotifications = getNotifications;
+  app.addNotification = addNotification;
+
+  window.app = app;
+})(window.app || {});
