@@ -36,12 +36,33 @@ h2 {
   padding-left: 5px;
 }
 
+.item-25 {
+  width: 25%;
+}
+
+.item-33 {
+  width: 33.33333%;
+}
+
+.item-75 {
+  width: 75%;
+}
+
+.item-100 {
+  width: 100%;
+}
+
 .paper {
   padding: 20px;
   background: #111321;
   border-radius: 5px;
 }
 
+.paper.placeholder {
+  height: 200;
+}
+
 .mts {
   margin-top: .8rem;
 }
+
