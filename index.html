@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./app.css" />
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script type="text/javascript" src="./js/utils.js"></script>
+
+  <title>Get notified</title>
+</head>
+<body class="main-content">
+  <div id="root"></div>
+
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6 large-4">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-3">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-9">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-9">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-3">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell medium-6">
+        <div class="paper placeholder"></div>
+      </div>
+      <div class="cell">
+        <div class="paper paper--callout">
+          <h1>Instructions</h1>
+          <p>You're going to make a simple notifications application. In short it will make an api request that fetches the latest notifications, as well as allowing the user to dismiss individual notifications.</p>
+
+          <h2>Requirements</h2>
+          <ol>
+            <li>Use the fake function <strong>getNotifications</strong> to get the list of notifications. <span class="label label--knockout">important</span></li>
+            <li>Talk through your thoughts while working. <span class="label label--knockout">important</span></li>
+          </ol>
+
+          <ul>
+            <li>Notifications should be located in the upper right corner of the screen.</li>
+            <li>If more than one notification is present it should show up stacked one on top of the other.</li>
+            <li>The notifications should be sorted by their timestamp. (e.g. newest is at the top, and oldest is at the bottom)</li>
+            <li>Each notification should have a human-readable timestamp printed somewhere in the notification.</li>
+            <li>Each notification should have a dismiss button that allows the user to hide a specific notification.</li>
+            <li>All notifications should have some similar styling to make it easy to see.</li>
+          </ul>
+
+          <h2>Bonus</h2>
+          <ul>
+            <li>Try to match the style of the page or at least make the notifications look "good".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/database.js"></script>
+
+  <script type="text/babel">
+    /**
+     * Your code here
+     */
+    const App = () => {
+      return <div>Hello from React</div>;
+    };
+
+    // class App extends React.Component {
+    //   render() {
+    //     return <div>Hello from React</div>;
+    //   }
+    // }
+
+    /**
+     * Boiler plate code, no need to mess with it.
+     */
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>

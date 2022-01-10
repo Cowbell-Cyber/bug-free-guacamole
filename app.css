@@ -4,13 +4,18 @@
 
 html {
   height: 100%;
+  font-size: 18px;
 }
 
 body {
-  height: inherit;
-  background: linear-gradient(#141848, #16182c 40%);
+  height: 100%;
+  background: #16182c linear-gradient(#1c1f40, #16182c 40%) no-repeat 0 0;
   color: white;
   font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.main-content {
+  margin-top: 5%;
 }
 
 h1 {
@@ -23,33 +28,9 @@ h2 {
   font-weight: 400;
 }
 
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: -5px;
-  margin-left: -5px;
-}
-
-.grid-item {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.item-25 {
-  width: 25%;
-}
-
-.item-33 {
-  width: 33.33333%;
-}
-
-.item-75 {
-  width: 75%;
-}
-
-.item-100 {
-  width: 100%;
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .paper {
@@ -59,10 +40,20 @@ h2 {
 }
 
 .paper.placeholder {
-  height: 200px;
+  min-height: 200px;
+}
+
+.paper--callout {
+  border: 1px solid hsl(235deg 38% 30%);
 }
 
 .mts {
   margin-top: .8rem;
 }
 
+.label--knockout {
+  background-color: transparent;
+  border: 1px solid #49e9b9;
+  border-radius: 3px;
+  color: #49e9b9;
+}
